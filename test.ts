@@ -4,7 +4,6 @@ import { retrieveTokens, TokensFromStorage } from "./storage.js";
 import { initiateAuth } from "./cognito-api.js";
 import { setTimeoutWallClock } from "./util.js";
 
-
 let schedulingRefresh: ReturnType<typeof _scheduleRefresh> | undefined =
   undefined;
 
