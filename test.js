@@ -26,24 +26,6 @@ import ReactSharedInternals from 'shared/ReactSharedInternals';
 const ReactCurrentOwner = ReactSharedInternals.ReactCurrentOwner;
 const ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
 
-
-/**
- * @description This function sets an "extra stack frame" to indicate the type of
- * element being validated during development (__DEV__). In particular:
- * 
- * - If element is provided - currently being validated.
- * - The frame indicates details about unknown element types for element._source using
- * describeUnknownElementTypeFrameInDEV
- * - Else (i.e., if element is null/ undefined) a special frame with null parameters
- * is used  to signal this absence of current element validation.
- * 
- * @param { object } element - The `element` input parameter of `setCurrentlyValidatingElement`
- * is used to set the element being currently validated as per React Dev Tools debugging
- * requirements if the process runs under developer mode (`__DEV__`). Only when an
- * element has been supplied is a stack frame generated that depicts the element type
- * and its source information for better debugging. When no element is provided however
- * it's necessary to remove any previously recorded stack frames.
- */
 function setCurrentlyValidatingElement(element) {
   
   if (__DEV__) {
