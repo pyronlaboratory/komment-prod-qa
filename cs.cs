@@ -8,6 +8,10 @@ class @AnonymousClass001
     Console.Write($"{i}");
   }
 }
+/// <summary> 
+/// <c>Main</c> calls the `foo()` function and then passes its return value to the 
+/// `bar()` function. 
+/// </summary> 
 void Main()
 {
   var a = foo();
@@ -55,11 +59,30 @@ public static IEnumerable<T> Sample<T>(this IEnumerable<T> sequence, int frequen
     }
 }
 
+/// <summary> 
+/// <c>DoProcessing</c> TraceMessage and logs "Something happened." 
+/// </summary> 
 public void DoProcessing()
 {
     TraceMessage("Something happened.");
 }
 
+/// <summary> 
+/// <c>TraceMessage</c> records information about a message passed to it, including 
+/// the message itself, and information about where and when it was called. 
+/// </summary> 
+/// <param name="message"> 
+/// message to be traced and is written to the trace log. 
+/// </param> 
+/// <param name="string"> 
+/// message to be traced. 
+/// </param> 
+/// <param name="string"> 
+/// message to be traced and is passed to the `Trace.WriteLine()` method for logging. 
+/// </param> 
+/// <param name="int"> 
+/// 0-based line number of the calling code file where the trace message was generated. 
+/// </param> 
 public void TraceMessage(string message,
         [CallerMemberName] string memberName = "",
         [CallerFilePath] string sourceFilePath = "",
