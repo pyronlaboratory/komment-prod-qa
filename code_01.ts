@@ -1,14 +1,40 @@
 import React from 'react';
 
 
+/**
+ * @description computes various mathematical operations and returns a list of results
+ * with their corresponding indices.
+ * 
+ * @returns { number } a list of mathematical results, each presented in a bullet
+ * point list with an index number.
+ */
 const MathComponent: React.FC = () => {
 
 
+    /**
+     * @description takes two `number` parameters `a` and `b` and returns their sum.
+     * 
+     * @param { number } a - 1st operand of the addition operation performed by the
+     * function `add`.
+     * 
+     * @param { number } b - second number to be added to the `a` input parameter and
+     * returns their sum as a single number.
+     * 
+     * @returns { number } the sum of the two input numbers.
+     */
     function add(a: number, b: number): number {
         return a + b;
     }
 
 
+    /**
+     * @description calculates the sine of a given number `a`.
+     * 
+     * @param { number } a - angle of sine calculation, which is passed to the `Math.sin()`
+     * method for computation and returned as the sinusoidal value.
+     * 
+     * @returns { number } the sine of the input `a`, which is a number.
+     */
     function sin(a: number): number {
         return Math.sin(a);
     }
@@ -32,6 +58,10 @@ const MathComponent: React.FC = () => {
     return (
         <div>
             <h1>Math Results</h1>
+            {/**
+             * @description takes an array of objects, maps each object to a list item, and returns
+             * the generated list.
+             */}
             <ul>
                 {results.map((result, index) => (
                     <li key={index}>Result {index + 1}: {result}</li>
