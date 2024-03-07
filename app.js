@@ -1,5 +1,16 @@
 
+/**
+ * @description calls six nested functions, each with a specific purpose: `innerFunction1`,
+ * `innerFunction2`, `innerFunction3`, `innerFunction4`, `innerFunction5`, and
+ * `innerFunction6`. These functions perform various tasks such as logging messages,
+ * incrementing/decrementing variables, calculating sums, factorials, and generating
+ * random numbers between 1 and 100.
+ */
 function mainFunction() {
+               /**
+                * @description increments the `a` variable and logs the message "Inner function 1
+                * executed" to the console.
+                */
     let a = 0; function innerFunction1() {
         a++;
         console.log("Inner function 1 executed");
