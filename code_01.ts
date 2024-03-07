@@ -1,13 +1,6 @@
 import React from 'react';
 
 
-/**
- * @description computes various mathematical operations and returns a list of results
- * with their corresponding indices.
- * 
- * @returns { number } a list of mathematical results, each presented in a bullet
- * point list with an index number.
- */
 const MathComponent: React.FC = () => {
 
 
