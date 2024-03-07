@@ -1,30 +1,6 @@
-/**
- * @description This function defines fiveinner functions, each with a different task:
- * 
- * 1/ `innerFunction1()` increments the variable `a` by 1 and logs a message to the
- * console.
- * 2/ `innerFunction2()` decrements the variable `a` by 1 and logs a message to the
- * console.
- * 3/ `innerFunction3()` checks whether `a` is greater than 0, less than 0, or equal
- * to 0 and logs an appropriate message to the console.
- * 4/ `innerFunction4()` calculates the sum of numbers from 1 to 10 using a loop and
- * logs the result to the console.
- * 5/ `innerFunction5()` calculates the factorial of 5 using a loop and logs the
- * result to the console.
- * 6/ `innerFunction6()` generates a random number between 1 and 100 using Math.random()
- * and logs the result to the console.
- * 
- * The function then calls each of these inner functions in sequence, with no interaction
- * between them.
- */
-function mainFunction() {
-    let a = 0;
 
-    /**
-     * @description This function, `innerFunction1()`, increments the variable `a` by 1
-     * and logs the message "Inner function 1 executed" to the console.
-     */
-    function innerFunction1() {
+function mainFunction() {
+    let a = 0; function innerFunction1() {
         a++;
         console.log("Inner function 1 executed");
     }
