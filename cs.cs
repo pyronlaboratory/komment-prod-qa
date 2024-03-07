@@ -2,19 +2,12 @@ Func<SomeClass, bool> isActiveSelector = it => it.IsActive;
 
 class @AnonymousClass001
 {
-  internal int i;
-  /// <summary> 
-  /// <c>@AnonymousMethod001</c> writes the value `i` to the console. 
-  /// </summary> 
+  internal int 
   internal void @AnonymousMethod001()
   {
     Console.Write($"{i}");
   }
 }
-/// <summary> 
-/// <c>Main</c> calls the `foo()` function and passes its return value to the `bar()` 
-/// function. 
-/// </summary> 
 void Main()
 {
   var a = foo();
