@@ -11,6 +11,10 @@ function mainFunction() {
                 * @description increments the `a` variable and logs the message "Inner function 1
                 * executed" to the console.
                 */
+               /**
+                * @description incremented a variable `a`, and then logged an message to the console
+                * indicating that it had been executed.
+                */
     let a = 0; function innerFunction1() {
         a++;
         console.log("Inner function 1 executed");
